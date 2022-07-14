@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="charset" content="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>bobs blocks</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        display: grid;
+        place-items: center;
+        width: 100vw;
+        height: 100vh;
+      }
+
+      .options {
+        border: 2px #000 solid;
+        padding: 10px;
+        display:flex;
+        justify-content: space-around;
+      }
+
+      .icon.selected {
+        display:inline-block;
+        outline
+        : 2px rgb(0, 203, 230) solid;
+      }
+
+      .icon, .icon img {
+        width: 24px;
+        height: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <canvas id="game" width="1" height="1"></canvas>
+      <div class="options">
+        <div class="icon" data-type="SAND">
+          <img src="./icons/sand.png" alt="Sand" />
+        </div>
+        <div class="icon" data-type="ONE">
+          <img src="./icons/one.png" alt="One" />
+        </div>
+        <div class="icon" data-type="TWO">
+          <img src="./icons/two.png" alt="Two" />
+        </div>
+        <div class="icon" data-type="THREE">
+          <img src="./icons/three.png" alt="Three" />
+        </div>
+        <div class="icon" data-type="FOUR">
+          <img src="./icons/four.png" alt="Four" />
+        </div>
+        <div class="icon" data-type="FIVE">
+          <img src="./icons/five.png" alt="Five" />
+        </div>
+        <div class="icon" data-type="SIX">
+          <img src="./icons/six.png" alt="Six" />
+        </div>
+        <div class="icon" data-type="SEVEN">
+          <img src="./icons/seven.png" alt="Seven" />
+        </div>
+        <div class="icon" data-type="EIGHT">
+          <img src="./icons/eight.png" alt="Eight" />
+        </div>
+        <div class="icon" data-type="TREASURE">
+          <img src="./icons/treasure.png" alt="Treasure" />
+        </div>
+        <div class="icon" data-type="SPONGE">
+          <img src="./icons/sponge.png" alt="Sponge" />
+        </div>
+        <div class="icon" data-type="ENZYME">
+          <img src="./icons/enzyme.png" alt="Enzyme" />
+        </div>
+        <div class="icon" data-type="SPLITTER">
+          <img src="./icons/splitter.png" alt="Splitter" />
+        </div>
+        <div class="icon" data-type="FACTORY">
+          <img src="./icons/factory.png" alt="Factory" />
+        </div>
+        <div class="icon" data-type="TRACTOR">
+          <img src="./icons/tractor.png" alt="Tractor" />
+        </div>
+        <div class="icon" data-type="TRANSFORMER">
+          <img src="./icons/transformer.png" alt="Transformer" />
+        </div>
+        <div class="icon" data-type="ENEMY">
+          <img src="./icons/enemy.png" alt="Enemy" />
+        </div>
+        <div class="icon" data-type="ENEMY_HOUSE">
+          <img src="./icons/enemy_house.png" alt="Enemy House" />
+        </div>
+        <input type="button" id="done" value="Done" />
+      </div>
+    </div>
+    <script src="./create.js"></script>
+  </body>
+</html>

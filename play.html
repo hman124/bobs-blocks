@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta name="charset" content="utf-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+        <title>Bob's Blocks</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                margin: 0;
+                padding: 0;
+                display:grid;
+                place-items:center;
+                width: 100vw;
+                height: 100vh;
+            }
+
+            canvas {
+                border: 2px #000 solid;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <h1 id="title"></h1>
+            <canvas id="game" width="1" height="1"></canvas>
+            <div class="status">
+                <p id="message">Press B for Block Reference</p>
+            </div>
+        </div>
+        <script src="./play.js"></script>
+    </body>
+</html>
